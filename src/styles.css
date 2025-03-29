@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 2px;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.cell.ship { background-color: #666; }
+.cell.hit { background-color: #f00; }
+.cell.miss { background-color: #00f; }
+.cell.sunk { background-color: #000; }
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
